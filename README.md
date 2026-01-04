@@ -126,12 +126,14 @@ Continuous retraining with updated well data.
 
 Ethical communication of model limitations to stakeholders.
 
-![Confusion matrix](./Images/Confusion matrix.png)
+<img width="853" height="699" alt="Distribution of wells" src="https://github.com/user-attachments/assets/2cca617e-e94f-43d4-9c46-7eeda8d099aa" />
 
-![Correlation heatmap](./Images/Correlation heatmap.png)
+<img width="908" height="680" alt="Correlation heatmap" src="https://github.com/user-attachments/assets/28974055-678d-43ac-91be-194f9ed2f9b0" />
 
-![Well distribution](./Images/Distibution of wells.png)
+<img width="548" height="453" alt="Confusion matrix" src="https://github.com/user-attachments/assets/a046fa91-8028-4891-97cf-022524acf6ca" />
 
-![Confusion matrix](./Images/Model comparisons.png)
+<img width="589" height="453" alt="y_classes" src="https://github.com/user-attachments/assets/286ba0f4-0015-4e84-a354-d6ae94307c71" />
 
-![Target classes](./y_classes.png)
+<img width="567" height="433" alt="Model comparisons" src="https://github.com/user-attachments/assets/45da0df8-5368-4ffe-b50a-5ea16b5d2e73" />
+
+
