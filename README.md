@@ -45,15 +45,18 @@ This shows a correlation heatmap between the features used in the models.
 
 
 <img width="548" height="453" alt="Confusion matrix" src="https://github.com/user-attachments/assets/a046fa91-8028-4891-97cf-022524acf6ca" />
+
 This is a confusion matrix from the Random forest model.
 
 
 
 <img width="589" height="453" alt="y_classes" src="https://github.com/user-attachments/assets/286ba0f4-0015-4e84-a354-d6ae94307c71" />
+
 This bar graph shows the distribution of the target classes(wells according to their functionality). 
 
 
 <img width="567" height="433" alt="Model comparisons" src="https://github.com/user-attachments/assets/45da0df8-5368-4ffe-b50a-5ea16b5d2e73" />
+
 This shows the model perfomances according to the F1 scores.
 
 # Conclusion
