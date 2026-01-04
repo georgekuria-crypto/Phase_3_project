@@ -29,6 +29,19 @@ The datasets were compiled from Kaggle, being already split into a training set 
 # Key Features
 THe features which were utilized to accomplish the objectives were;amount_tsh (total static head, water quantity indicator),gps_height (altitude of well),installer, funder (responsible parties),source, source_type, waterpoint_type (design and water source),payment_type (community payment model),public_meeting, permit (community governance indicators)
 
+# Visualizations
+
+
+<img width="853" height="699" alt="Distribution of wells" src="https://github.com/user-attachments/assets/2cca617e-e94f-43d4-9c46-7eeda8d099aa" />
+
+<img width="908" height="680" alt="Correlation heatmap" src="https://github.com/user-attachments/assets/28974055-678d-43ac-91be-194f9ed2f9b0" />
+
+<img width="548" height="453" alt="Confusion matrix" src="https://github.com/user-attachments/assets/a046fa91-8028-4891-97cf-022524acf6ca" />
+
+<img width="589" height="453" alt="y_classes" src="https://github.com/user-attachments/assets/286ba0f4-0015-4e84-a354-d6ae94307c71" />
+
+<img width="567" height="433" alt="Model comparisons" src="https://github.com/user-attachments/assets/45da0df8-5368-4ffe-b50a-5ea16b5d2e73" />
+
 # Conclusion
 Out of the models used in the project the Random Forest achieved the best macro F1 score and balanced recall across classes.
 
@@ -42,3 +55,8 @@ Out of the models used in the project the Random Forest achieved the best macro 
 3. Introduce manaegable fees to the community that will source income for well repairs.
 
 4. Constant management and monitoring of the water sources so as to track reliability and factors affecting it.
+
+
+
+
+
