@@ -1,137 +1,44 @@
-# Phase_3_project
+# Kuria Company Tanzanian Well Analysis 
 # Business Understanding
 ## Overview
 
-The Ministry of Water under the Republic of Tanzania has been collecting data on the functionality of water pumps across the country. The dataset includes various features such as the location, type, and condition of the pumps, as well as environmental and socio-economic factors that may influence their functionality. The goal is to analyze this data to predict the operational status of water pumps and identify key factors affecting their performance.
+The Ministry of Water under the Republic of Tanzania has been collecting data on the functionality of water pumps across the country. The dataset includes various features such as the location, type, and condition of the pumps, as well as environmental and socio-economic factors that may influence their functionality. The goal is to analyze this data to predict the operational status of water pumps and identify key factors affecting their performance which will aid in future constructions of wells.
 
 ## Objectives
-Identify factors influencing the functionality of wells.
+The company has the following objectives in this project:
 
-Provide a strategy for building new wells to the Ministry of Water or donors.
+1. Identify factors influencing the functionality of wells.
 
-Detect patterns that lead to unfunctionality of wells.
+2. Provide a strategy for building new wells to the Ministry of Water or donors.
 
-Recommend a repair strategy for non‑functional wells.
+3. Detect patterns that lead to unfunctionality of wells.
 
-## Data
-Training set: Features describing wells (location, installer, funder, source, waterpoint type, etc.) and labels (status_group).
+4. Recommend a repair strategy for non‑functional wells.
 
-Test set: Features only, used for generating predictions.
+##  Data Understanding and Analysis
 
-Rows: ~59,000 wells.
+## Source of data
+The datasets were compiled from Kaggle, being already split into a training set and a testing set. 
 
-Columns: ~40 features (numeric + categorical).
+## Data Description
+ The training set had the following features describing wells;location, installer, funder, source, waterpoint type, etc.
+ The target for this project is the status_group.
+
+ The test set consisted only of the features only.
 
 # Key Features
-amount_tsh (total static head, water quantity indicator)
+THe features which were utilized to accomplish the objectives were;amount_tsh (total static head, water quantity indicator),gps_height (altitude of well),installer, funder (responsible parties),source, source_type, waterpoint_type (design and water source),payment_type (community payment model),public_meeting, permit (community governance indicators)
 
-gps_height (altitude of well)
+# Conclusion
+Out of the models used in the project the Random Forest achieved the best macro F1 score and balanced recall across classes.
 
-installer, funder (responsible parties)
-
-source, source_type, waterpoint_type (design and water source)
-
-payment_type (community payment model)
-
-public_meeting, permit (community governance indicators)
-
-# Methodology
-
-1. Data Preparation
-Dropped identifiers and redundant columns to prevent leakage.
-
-Handled missing values (None for categorical, median for numeric).
-
-Converted categorical features to strings for consistent encoding.
-
-Removed highly correlated numeric features (threshold > 0.85).
-
-Stratified train/test split to preserve class balance.
-
-2. Preprocessing Pipelines
-Numeric: imputation + scaling.
-
-Categorical: imputation + one‑hot encoding.
-
-Combined using ColumnTransformer for reproducibility.
-
-3. Models
-Baseline Logistic Regression: interpretable benchmark.
-
-Tuned Logistic Regression: optimized regularization (C).
-
-Decision Tree: interpretable rules, non‑linear splits.
-
-Random Forest: ensemble for robustness and feature importance.
-
-4. Evaluation
-Metrics: macro F1, per‑class precision/recall, confusion matrix.
-
-Emphasis on recall for “needs repair” and “non‑functional” classes.
-
-5. Feature Importance
-Permutation importance to identify top drivers of well functionality.
-
-Risk tables for categorical features (e.g., source type, payment type).
-
-# Results
-Random Forest achieved the best macro F1 and balanced recall across classes.
-
-Key drivers of well functionality include:
-
-Source type (groundwater vs. surface water).
-
-Waterpoint type (communal standpipe vs. borehole).
-
-Installer/funder quality.
-
-GPS height and water quantity indicators.
 
 # Recommendations
-For New Wells
-Prioritize low‑risk regions and reliable installers.
 
-Adopt design standards linked to higher functionality (e.g., boreholes, protected sources).
+1. New wells should be constructed in low-risk areas with reliable installers to reduce the need for frequent repairs.
 
-Require community payment models that sustain maintenance.
+2. Highly functional water sources should be utilized and constructed more.
 
-For Detecting Failures
-Monitor wells with surface water sources and seasonal quantity patterns.
+3. Introduce manaegable fees to the community that will source income for well repairs.
 
-Flag wells installed by vendors with poor historical performance.
-
-For Repairs
-Triage repairs using model probabilities.
-
-Focus on components most linked to failure (e.g., pump/extraction type).
-
-Deploy repair teams regionally to hotspots.
-
-# Visuals
-Class distribution bar chart.
-
-Correlation heatmap.
-
-Confusion matrix heatmap.
-
-Feature importance bar chart.
-
-# 
-Next Steps
-Incorporate geospatial analysis for regional risk mapping.
-
-Deploy predictive model for real‑time monitoring.
-
-Continuous retraining with updated well data.
-
-Ethical communication of model limitations to stakeholders.
-
-![Confusion matrix](./Images/Confusion matrix.png)
-
-![Correlation heatmap](./Images/Correlation heatmap.png)
-
-![Well distribution](./Images/Distibution of wells.png)
-
-![Confusion matrix](./Images/Model comparisons.png)
-
-![Target classes](./y_classes.png)
+4. Constant management and monitoring of the water sources so as to track reliability and factors affecting it.
